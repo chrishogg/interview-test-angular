@@ -1,5 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+//import the student interface from the module.
+import { Student } from '../app.module';
 
 @Component({
   selector: 'app-home',
@@ -13,13 +15,4 @@ export class HomeComponent {
       this.students = result;
     }, error => console.error(error));
   }
-}
-
-interface Student {
-  id: number;
-  firstName: string;
-  lastName: string;
-  email: string;
-  major: string;
-  averageGrade: number; //new param, average grade.
 }

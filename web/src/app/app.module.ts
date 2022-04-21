@@ -31,3 +31,13 @@ import { AddStudentComponent } from './add-student/add-student.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+//not sure if this is a good place to put this, but i want to make the interface reusable. 
+export interface Student {
+  id: number;
+  firstName: string;
+  lastName: string;
+  email: string;
+  major: string;
+  averageGrade: number; //new param, average grade.
+}
