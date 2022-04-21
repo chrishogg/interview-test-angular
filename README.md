@@ -17,10 +17,10 @@ We ask that you spend two hours to do this test and start by taking a Fork of th
 Please enter/replace your details below.
 |   |   |
 | - | - |
-| Name | John Smith |
-| Date | 2022-03-21 |
-| Start Time | 00:00+13:00 |
-| Finish Time | 02:15+13:00 |
+| Name | Chris Hogg |
+| Date | 2022-04-22 |
+| Start Time | 10:30 |
+| Finish Time |  |
 
 ## Requirements
 In order to complete this test you will need the following tools:
