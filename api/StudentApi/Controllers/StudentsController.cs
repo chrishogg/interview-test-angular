@@ -39,5 +39,18 @@ namespace StudentApi.Controllers
 
             return reponse.Students;
         }
+
+        /// <summary>
+        /// Adds a new student
+        /// </summary>
+        /// <returns></returns>
+        [Route("add")]
+        [HttpPost]
+        public async Task<bool> Add()
+        {
+            
+
+            return true;
+        }
     }
 }
