@@ -15,5 +15,7 @@ namespace StudentApi.Models.Students
         public string Email { get; set; }
 
         public string Major { get; set; }
+        //add new public param, average grade. Going to make it an int to keep it simple.
+        public int AverageGrade { get; set; }
     }
 }
