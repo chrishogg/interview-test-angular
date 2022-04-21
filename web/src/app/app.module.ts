@@ -8,11 +8,15 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 
+//new import for add student component. 
+import { AddStudentComponent } from './add-student/add-student.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavMenuComponent,
-    HomeComponent
+    HomeComponent,
+    AddStudentComponent //declare our new class. 
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -20,6 +24,7 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'add-student', component: AddStudentComponent, pathMatch: 'full' } //add the new route for the add student page. I'm really just following my nose with this bit, but so far so good :-)
     ])
   ],
   providers: [],
