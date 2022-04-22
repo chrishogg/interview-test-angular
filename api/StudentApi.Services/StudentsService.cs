@@ -48,7 +48,36 @@ namespace StudentApi.Services
         /// <exception cref="NotImplementedException"></exception>
         public bool AddStudent(Student student)
         {
-            throw new NotImplementedException();
+
+            bool studentExists = false;
+
+            //there will be a nicer way of doing this, but we should check if the student already exists. Would normally be a db call, or something.
+            if(students.Count > 0)
+            {
+                //loop over the students
+                foreach (var stu in students)
+                {
+                    //just check email for now, sometimes its usually the only unqiue thing.
+                    if (stu.Email == student.Email)
+                    {
+                        studentExists = true;
+                        break;
+                    }
+                }
+            }
+
+            //if they don't exist, add them
+            if(studentExists == false)
+            {
+                //add the new student to the list.
+                students.Append(student);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
         }
 
         /// <summary>

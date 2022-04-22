@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using StudentApi.Services;
 
 namespace StudentApi.Controllers
 {
@@ -46,11 +47,10 @@ namespace StudentApi.Controllers
         /// <returns></returns>
         [Route("add")]
         [HttpPost]
-        public async Task<bool> Add()
+        public async Task<IActionResult> Add(Student student)
         {
-            
-
-            return true;
+            //TODO implement added the new student.
+            return Ok(student);
         }
     }
 }
