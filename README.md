@@ -20,7 +20,7 @@ Please enter/replace your details below.
 | Name | Chris Hogg |
 | Date | 2022-04-22 |
 | Start Time | 10:40 |
-| Finish Time | 01:05 |
+| Finish Time | 13:05 |
 
 ## Requirements
 In order to complete this test you will need the following tools:
