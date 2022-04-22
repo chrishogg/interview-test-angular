@@ -1,6 +1,9 @@
 <h1>Add a new Student</h1>
 
-<form #myForm="ngForm" (ngSubmit)="onSubmitTemplateBased(myForm.value)">
+<p class="alert alert-primary" *ngIf="studentAdded">The new student has been saved.</p>
+<p class="alert alert-warning" *ngIf="studentAddedError">An error has occurred while trying to save the student. Please try again.</p>
+
+<form #form="ngForm" (ngSubmit)="onSubmitTemplateBased(form, form.value)">
   <div class="form-row">
     <div class="form-group col-md-6">
         <label>First Name:</label>&nbsp;
@@ -25,6 +28,6 @@
   
   </div>  
 
-  <button class="btn btn-primary" type="submit" [disabled]="!myForm.valid">Submit</button>
+  <button class="btn btn-primary" type="submit" [disabled]="!form.valid">Submit</button>
   
 </form>
